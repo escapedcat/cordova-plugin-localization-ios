@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<plugin id="cf-cordova-plugin-localization-ios"
-    version="0.0.1"
-    xmlns="http://apache.org/cordova/ns/plugins/1.0">
-
+<plugin id="cf-cordova-plugin-localization-ios" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>CRM Factory Cordova Localization iOS Plugin</name>
-    <description>A label translate example</description>    
-    
+    <description>A label translate example</description>
     <!-- ios -->
     <platform name="ios">
         <config-file target="*-Info.plist" parent="CFBundleLocalizations">
             <array>
-              <string>en</string>
-              <string>zh_CN</string>
+                <string>en</string>
+                <string>zh_CN</string>
             </array>
-        </config-file>  
+        </config-file>
+        <config-file target="*-Info.plist" parent="CFBundleDevelopmentRegion">
+            <array>
+                <string>English</string>
+                <string>China</string>
+            </array>
+        </config-file>
     </platform>
 </plugin>
